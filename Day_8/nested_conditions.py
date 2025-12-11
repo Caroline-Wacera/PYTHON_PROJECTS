@@ -45,4 +45,55 @@ Allow transaction only if:
 amount ≤ balance
 PIN is correct
 Else show appropriate errors."""
-amount = int(input("Enter the amount:")
+amount = int(input("Enter the amount: "))
+balance = int(input("Enter the balance: "))
+pin = input("Enter the pin: ")
+
+if amount <= balance:
+    if pin == "1234":
+        print("Transaction allowed")
+    else:
+        print("Incorrect PIN")
+else:
+    print("Insufficient balance")
+
+
+
+"""4️⃣ Shopping discount system:
+Ask for:
+Has coupon? (yes/no)
+Is VIP member? (yes/no)
+Rules:
+If VIP → automatic 20% discount
+If coupon → 10%
+If both → 30%"""
+if vip_member == "yes":
+    if has_coupon == "yes":
+        print("Discount is 30%")     # VIP + coupon
+    else:
+        print("Discount is 20%")     # VIP only
+else:
+    if has_coupon == "yes":
+        print("Discount is 10%")     # Coupon only
+    else:
+        print("No discount")         # None
+
+
+
+"""5️⃣ Student exam grading system:
+Ask:
+exam score
+project submitted? (yes/no)
+Rules:
+If score ≥ 50 AND project submitted → pass
+If score ≥ 50 BUT project not submitted → “Submit project”
+If score < 50 → fail"""
+exam_score = int(input("Enter the exam score:"))
+project_submition = input("Have you submitted the project?")
+if exam_score >= 50:
+    if project_submition == "yes":
+        print("Pass")
+    else:
+        print("Submit project")
+else:
+    print("Fail")
