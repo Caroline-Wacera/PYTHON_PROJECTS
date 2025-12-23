@@ -32,4 +32,20 @@ triple(5)
 cube = number × number × number"""
 def cube(number):
     return number * number * number
-result 
+result = cube(3)
+print(result)
+#3 has been assigned as a values i.e number = 3. I could use any other value.
+
+
+"""👉 Write a function called check_age
+👉 Takes one number (age)
+👉 If age ≥ 18 → print "Adult"
+👉 Else → print "Minor"
+👉 Call the function"""
+def check_age(age):
+    if age >= 18:
+        print("Adult")
+    else:
+        print("Minor")
+
+check_age(20)
