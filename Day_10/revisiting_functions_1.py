@@ -2,7 +2,7 @@
 👉 It should print "Welcome!"
 👉 Call the function once"""
 def greet():
-    print("Welcome")
+    print("Welcome!")
 greet()
 
 
@@ -47,5 +47,4 @@ def check_age(age):
         print("Adult")
     else:
         print("Minor")
-
 check_age(20)

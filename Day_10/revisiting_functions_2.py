@@ -60,10 +60,3 @@ def login(username):
         print("Access denied")
 login("Caroline")
 
-
-
-"""👉 Function guess_yes()
-👉 Allow 2 attempts
-👉 If user types "yes" → print "Correct" and stop
-👉 Else after attempts → "Failed"""
-def guess_yes():
