@@ -64,3 +64,15 @@ for number in range(1, 16):
 word = input("Enter a word:")
 for i in range(5):
     print(word)
+
+
+
+#🔟 Count Letters
+#Ask the user for a word.
+#Print each letter on a new line.
+word = input("Enter a word:")
+for letter in word:
+    print(letter)
+
+
+
