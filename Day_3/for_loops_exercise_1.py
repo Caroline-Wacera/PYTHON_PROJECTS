@@ -29,3 +29,46 @@ for number in range(1, 16):
 #Print numbers from 5 to 10.
 for number in range(5, 11):
     print(number)
+
+
+#6️⃣ Skip a Number
+#Print numbers from 1 to 10, but skip 6.
+for number in range(1, 11):
+    if number != 6:
+        print(number)
+
+
+#7️⃣ Count Evens
+#Count how many even numbers are between 1 and 20.
+#Print the count.
+count = 0
+for number in range(1, 21):
+    if number % 2 == 0:
+        count += 1
+print(f"The even numbers between 1 and 20 is {count}")
+
+
+#8️⃣ Count Odds
+#Count how many odd numbers are between 1 and 20.
+#Print the count.
+count = 0
+for number in range(1, 21):
+    if number % 2 != 0:
+        count += 1
+print(f"The odd numbers between 1 and 20 is {count}")
+
+
+#9️⃣ Sum of Numbers
+#Calculate the sum of numbers from 1 to 10.
+#📌 Use a variable like total
+total = 0
+for number in range(1, 11):
+    total += number
+print(f"The sum of numbers from 1 to 10 is {total}")
+
+
+#🔟 Multiply Table
+#Print the multiplication table of 4 (from 1 to 10).
+for number in range(1, 11):
+    print(number * 4)
+    
